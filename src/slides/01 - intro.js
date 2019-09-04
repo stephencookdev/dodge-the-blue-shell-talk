@@ -4,6 +4,6 @@ import styles from "./common.scss";
 
 export default () => (
   <CustomSlide title={true}>
-    <h1>Spyro SVG</h1>
+    <h1>Sonic Icons SVG</h1>
   </CustomSlide>
 );

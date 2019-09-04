@@ -1,5 +1,5 @@
 {
-  "name": "spyro-svg-talk",
+  "name": "sonic-svg-talk",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephencookdev/spyro-svg-talk.git"
+    "url": "git+https://github.com/stephencookdev/sonic-svg-talk.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephencookdev/spyro-svg-talk/issues"
+    "url": "https://github.com/stephencookdev/sonic-svg-talk/issues"
   },
-  "homepage": "https://github.com/stephencookdev/spyro-svg-talk#readme"
+  "homepage": "https://github.com/stephencookdev/sonic-svg-talk#readme"
 }
