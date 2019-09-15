@@ -4,8 +4,12 @@
 }
 
 :root {
+  --safe-padding: 2vh;
+  --safe-padding-bottom: 8vh;
+
   --primary-color: #00b2ff;
   --primary-color-light: #e7f5fa;
+  --primary-color-light-2: #b9eaff;
   --primary-color-alt: #0092d1;
   --primary-dark: #3c2c34;
   --primary-light: #fff;
@@ -20,8 +24,19 @@
 }
 
 .subtitle {
-  font-size: 5vh;
-  opacity: 0.5;
+  font-size: 3vh;
+  text-transform: uppercase;
+  letter-spacing: 1.5vh;
+  word-spacing: 0.5vh;
+  margin: 0;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+hr.highlight {
+  border-top-width: 1vh;
+  margin: 4vh 0;
 }
 
 .checkboxLabel {
@@ -75,13 +90,26 @@
   margin-bottom: 6vh;
 }
 
+.creditAuthor,
+.demoLink {
+  font-size: 5vh;
+  padding: 0.5rem 0.7rem 0.2rem;
+  color: var(--primary-color);
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    background: var(--primary-color);
+    color: var(--primary-color-light);
+  }
+}
+
 .hugeText {
   text-align: center;
   font-size: 5vh;
 
   .main,
-  .pink,
-  .orange {
+  .highlight {
     font-size: 10vh;
   }
   .main {
@@ -112,6 +140,22 @@
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
+}
+.asideImgHolder {
+  height: 65vh;
+  width: 40%;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
 .displayRight {
   display: grid;

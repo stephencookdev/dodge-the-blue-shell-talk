@@ -4,19 +4,21 @@
   width: 100%;
   height: 100%;
   line-height: 1.5;
+  padding: var(--safe-padding) var(--safe-padding) var(--safe-padding-bottom);
   overflow: hidden;
   box-sizing: border-box;
 
   h1 {
-    border-bottom: 0.25rem solid currentColor;
+    border-bottom: 1vh solid var(--primary-color);
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0 3rem;
     font-size: 10vh;
-    line-height: 1.2;
+    line-height: 1;
   }
 
   ul {
     font-size: 5vh;
+    text-align: left;
   }
 
   hr {
@@ -41,6 +43,7 @@
       height: fit-content;
       width: fit-content;
       zoom: 1.5;
+      text-align: left;
     }
   }
 }

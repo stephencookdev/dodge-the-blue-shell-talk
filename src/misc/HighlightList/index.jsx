@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import classNames from "classnames";
 import styles from "./styles.scss";
 
-export default ({ items }) => {
+export default ({ items, offset = 0 }) => {
   let itemsCount = 0;
   const cookedItems = items.map(it => {
     const cookedIt = typeof it === "string" ? { text: it, count: 1 } : it;
@@ -19,9 +19,11 @@ export default ({ items }) => {
     };
   });
 
+  const maxIndex = itemsCount + offset;
+
   return (
     <ul className={styles.list}>
-      <Step index={0} maxIndex={itemsCount}>
+      <Step index={offset} maxIndex={maxIndex}>
         {""}
       </Step>
       <Route
@@ -33,7 +35,10 @@ export default ({ items }) => {
               key={i}
               className={classNames({
                 [styles.active]:
-                  n === 0 || (n >= item.startIndex + 1 && n < item.endIndex + 1)
+                  n === offset ||
+                  n > maxIndex ||
+                  (n >= item.startIndex + offset + 1 &&
+                    n < item.endIndex + offset + 1)
               })}
             >
               {item.text}

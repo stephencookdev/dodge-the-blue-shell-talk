@@ -34,20 +34,34 @@ nav {
   top: 16px;
   display: flex;
   flex-direction: column;
-  margin-right: 32px;
+  margin-right: 16px;
   background: var(--primary-color);
 }
 nav a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 18px 16px 14px;
   font-size: 24px;
-  color: #fff;
+  color: var(--primary-color-light-2);
   text-decoration: none;
   transition: 0.2s ease background;
 }
 nav a:hover {
+  --stroke-alt: var(--primary-color-alt);
+  color: var(--primary-light);
   background: var(--primary-color-alt);
   transition: none;
+}
+nav a svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  margin-top: -0.3em;
+  fill: none;
+  stroke: currentColor;
+}
+nav a:hover svg {
+  fill: currentColor;
 }
 
 nav + section {

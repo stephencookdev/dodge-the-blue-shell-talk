@@ -1,0 +1,16 @@
+.mid {
+  transform: translateZ(0);
+  perspective: 1000;
+  backwards-visibility: hidden;
+}
+
+.shadow,
+.model,
+.ltPaths,
+.dots,
+.main,
+.dots path,
+.strongPaths,
+.line {
+  visibility: hidden;
+}
