@@ -1,5 +1,22 @@
 :global {
   @import "../lib/codemirror.scss";
+  @import "../lib/manjari.scss";
+}
+
+:root {
+  --primary-color: #00b2ff;
+  --primary-color-light: #e7f5fa;
+  --primary-color-alt: #0092d1;
+  --primary-dark: #3c2c34;
+  --primary-light: #fff;
+
+  --slide-background: var(--primary-light);
+
+  --logo-title-color: var(--primary-color);
+  --logo-subtitle-color: var(--primary-dark);
+  --shell-line-color: var(--primary-dark);
+  --shell-top-color: var(--primary-color-alt);
+  --shell-bottom-color: #ffe9d4;
 }
 
 .subtitle {
@@ -68,10 +85,10 @@
     font-size: 10vh;
   }
   .main {
-    color: #f99e26;
+    color: var(--primary-color);
   }
   .main:nth-of-type(2n) {
-    color: #f92672;
+    color: var(--primary-color-alt);
   }
 }
 .centerWithHeader {
@@ -108,12 +125,6 @@
   justify-content: center;
   flex-direction: column;
 }
-.orange {
-  color: #f99e26;
-}
-.pink {
-  color: #f92672;
-}
 
 .quote {
   quotes: none;
@@ -131,12 +142,12 @@
   &:before,
   &:after {
     display: block;
-    color: #f99e26;
+    color: var(--primary-color);
     font-size: 300%;
   }
 }
 .quoteHighlight {
   display: block;
   font-size: 200%;
-  color: #f92672;
+  color: var(--primary-color);
 }

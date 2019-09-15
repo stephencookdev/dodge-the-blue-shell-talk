@@ -1,0 +1,91 @@
+body {
+  background: var(--primary-color-light);
+  margin: 0;
+  padding: 0;
+  font-family: "Manjari", cursive, sans-serif;
+  color: var(--primary-dark);
+}
+
+.logo {
+  display: block;
+  margin: 16px auto 32px;
+  width: fit-content;
+}
+.logo svg {
+  width: 300px;
+  height: auto;
+}
+.inner {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1024px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+
+nav,
+.content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+nav {
+  position: sticky;
+  top: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+  background: var(--primary-color);
+}
+nav a {
+  display: block;
+  padding: 18px 16px 14px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease background;
+}
+nav a:hover {
+  background: var(--primary-color-alt);
+  transition: none;
+}
+
+nav + section {
+  flex: 1;
+}
+
+.content {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.content h1 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.content h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.like {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  stroke: var(--primary-dark);
+  fill: none;
+}
+.like:hover {
+  fill: var(--primary-color-alt);
+  stroke: var(--primary-color-alt);
+}
+.img {
+  width: 100%;
+  margin-top: 16px;
+}
