@@ -1,0 +1,33 @@
+@import "./lib/styles";
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+nav a svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  margin-top: -0.3em;
+  fill: none;
+  stroke: currentColor;
+}
+nav a:hover svg {
+  fill: currentColor;
+}
+
+.like {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  stroke: var(--primary-dark);
+  fill: none;
+}
+.like:hover {
+  fill: var(--primary-color-alt);
+  stroke: var(--primary-color-alt);
+}
