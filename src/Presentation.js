@@ -6,12 +6,14 @@ import {
   Slide,
   DropDownNav
 } from "react-presents";
+import CursorHider from "./misc/CursorHider";
 
 const slides = require("./slides/*.js");
 
 export default () => (
   <Presentation disableTheme>
     <PresenterModePlugin />
+    <CursorHider />
 
     {Object.keys(slides).map(name => (
       <Slide component={slides[name].default} key={name} />
