@@ -14,3 +14,24 @@
 .line {
   visibility: hidden;
 }
+
+.forwardsBackwards {
+  width: 100%;
+
+  button {
+    font: inherit;
+    font-size: 4vh;
+    border-radius: 2vh;
+    padding: 1vh 3vh 0.5vh;
+    margin: 0 1vh;
+    outline: none;
+    cursor: pointer;
+    color: var(--primary-color-alt);
+    border: 1px solid var(--primary-color);
+    background: var(--primary-light);
+  }
+  button:hover {
+    background: var(--primary-color);
+    color: var(--primary-light);
+  }
+}

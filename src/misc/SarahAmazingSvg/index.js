@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { TweenMax, Sine } from "gsap/TweenMax";
 import styles from "./styles.scss";
 
@@ -9,9 +9,10 @@ import styles from "./styles.scss";
  * ############################################################################
  */
 
-export default () => {
+const SarahAmazingSvg = props => {
   useEffect(() => {
     const master = new TimelineMax();
+    if (props.setMaster) props.setMaster(master);
 
     // hack setTimeout because I'm an awful developer and can't be bothered to
     // do React properly and use ref
@@ -1442,3 +1443,18 @@ export default () => {
     </svg>
   );
 };
+
+export const ForwardsBackwards = () => {
+  const [master, setMaster] = useState(null);
+
+  return (
+    <div className={styles.forwardsBackwards}>
+      <SarahAmazingSvg setMaster={setMaster} />
+      <button onClick={() => master.pause()}>Pause</button>
+      <button onClick={() => master.play()}>Play</button>
+      <button onClick={() => master.reverse()}>Reverse</button>
+    </div>
+  );
+};
+
+export default SarahAmazingSvg;

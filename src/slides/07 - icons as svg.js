@@ -25,10 +25,10 @@ export default () => (
       <div className={styles.sidebyside}>
         <HighlightList
           items={[
-            "Dynamic colour",
             "Image size",
             "Accessible out of the box",
             "Fail to load gracefully",
+            "Dynamic colour",
             { text: "Non-trivial hover icons", count: 2 }
           ]}
           offset={1}

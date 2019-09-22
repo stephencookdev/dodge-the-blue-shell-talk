@@ -4,6 +4,7 @@ import classNames from "classnames";
 import CustomSlide from "../misc/CustomSlide";
 import HighlightList from "../misc/HighlightList";
 import OneSvg from "../misc/OneSvg";
+import CustomFont from "../misc/CustomFont";
 import BrokenFont from "../misc/BrokenFont";
 import yes from "../images/yes.gif";
 import nope from "../images/nope.gif";
@@ -14,6 +15,7 @@ export default () => (
   <CustomSlide title={true}>
     <Step index={0} exact>
       <h1>Icons as Fonts</h1>
+      <CustomFont />
     </Step>
     <Step index={1}>
       <h1>Icons as Fonts</h1>

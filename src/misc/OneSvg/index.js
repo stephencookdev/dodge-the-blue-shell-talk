@@ -3,12 +3,7 @@ import styles from "./styles.scss";
 
 export default () => (
   <div className={styles.oneSvg}>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="like"
-      viewBox="0 0 5.2 5.2"
-      class="like"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.2 5.2">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -22,9 +17,7 @@ export default () => (
     </svg>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="like"
       viewBox="0 0 5.2 5.2"
-      class="like"
       style={{
         stroke: "var(--primary-color)",
         fill: "var(--primary-color)"
