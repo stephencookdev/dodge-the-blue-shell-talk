@@ -29,7 +29,7 @@ export default () => (
             "Accessible out of the box",
             "Fail to load gracefully",
             "Dynamic colour",
-            { text: "Non-trivial hover icons", count: 2 }
+            { text: "Non-trivial icon variants", count: 2 }
           ]}
           offset={1}
         />

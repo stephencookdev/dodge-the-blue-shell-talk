@@ -27,7 +27,7 @@ export default () => (
             "Accessibility",
             "Font not loaded",
             "WTF-factor",
-            "Non-trivial hover icons"
+            "Non-trivial icon variants"
           ]}
           offset={1}
         />

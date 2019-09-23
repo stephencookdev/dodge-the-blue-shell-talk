@@ -2,7 +2,7 @@ import React from "react";
 import { Step, Code } from "react-presents";
 import classNames from "classnames";
 import CustomSlide from "../misc/CustomSlide";
-import SarahAmazingSvg, { ForwardsBackwards } from "../misc/SarahAmazingSvg";
+import { ForwardsBackwards } from "../misc/SarahAmazingSvg";
 import HighlightList from "../misc/HighlightList";
 import styles from "./common.scss";
 
