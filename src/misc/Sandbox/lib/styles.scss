@@ -43,7 +43,6 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  --stroke-alt: var(--primary-color-alt);
   color: var(--primary-light);
   background: var(--primary-color-alt);
 }
