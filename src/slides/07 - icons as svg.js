@@ -25,6 +25,28 @@ export default () => (
       <div className={styles.sidebyside}>
         <HighlightList
           items={[
+            {
+              text: (
+                <div>
+                  SVGO (
+                  <a
+                    href="https://jakearchibald.github.io/svgomg/"
+                    className={styles.creditAuthor}
+                  >
+                    SVGOMG
+                  </a>{" "}
+                  by{" "}
+                  <a
+                    href="https://twitter.com/jaffathecake"
+                    className={styles.creditAuthor}
+                  >
+                    @jaffathecake
+                  </a>
+                  )
+                </div>
+              ),
+              count: 1
+            },
             "Image size",
             "Accessible out of the box",
             "Fail to load gracefully",
