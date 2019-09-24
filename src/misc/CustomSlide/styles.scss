@@ -49,8 +49,15 @@
 }
 
 .custom-slide.light-mode :global {
+  .ReactCodeMirror {
+    box-shadow: 0 0 2px var(--primary-dark);
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+
   .ReactCodeMirror .cm-s-reactpresents.CodeMirror {
-    filter: invert(1) contrast(150%) brightness(150%);
+    filter: invert(1) contrast(140%) brightness(100%);
+    border-radius: 0.5em;
 
     .cm-tag {
       color: #f82;
