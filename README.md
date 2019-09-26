@@ -1,1 +1,1 @@
-
+Check out the compiled slide deck at [https://stephencook.dev/slides/dodge-the-blue-shell](https://stephencook.dev/slides/dodge-the-blue-shell)
