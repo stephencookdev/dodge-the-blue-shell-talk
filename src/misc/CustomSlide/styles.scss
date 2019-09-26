@@ -68,8 +68,16 @@
     .cm-comment {
       color: #888;
     }
+    .CodeMirror-line {
+      overflow: hidden;
+    }
     .highlight {
-      background-color: rgba(189, 147, 249, 0.45);
+      display: inline-block;
+      background-color: rgba(189, 147, 249, 0.35);
+
+      &:last-of-type {
+        width: 100%;
+      }
     }
   }
 }
